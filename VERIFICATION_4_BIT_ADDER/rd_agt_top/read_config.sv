@@ -1,0 +1,15 @@
+
+
+
+class read_config extends uvm_object;
+
+	`uvm_object_utils(read_config)
+	
+	function new(string name="read_config");
+		super.new(name);
+	endfunction
+	
+	virtual fbfa vif;
+	uvm_active_passive_enum is_active;
+	
+endclass
